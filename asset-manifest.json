@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/bootcamp_frontend-development/static/css/main.a7081871.css",
-    "main.js": "/bootcamp_frontend-development/static/js/main.70d5296d.js",
-    "static/js/787.28cb0dcd.chunk.js": "/bootcamp_frontend-development/static/js/787.28cb0dcd.chunk.js",
+    "main.css": "/bootcamp_frontend-development/static/css/main.75c42ae3.css",
+    "main.js": "/bootcamp_frontend-development/static/js/main.6570621a.js",
+    "static/js/787.019eed97.chunk.js": "/bootcamp_frontend-development/static/js/787.019eed97.chunk.js",
     "index.html": "/bootcamp_frontend-development/index.html",
-    "main.a7081871.css.map": "/bootcamp_frontend-development/static/css/main.a7081871.css.map",
-    "main.70d5296d.js.map": "/bootcamp_frontend-development/static/js/main.70d5296d.js.map",
-    "787.28cb0dcd.chunk.js.map": "/bootcamp_frontend-development/static/js/787.28cb0dcd.chunk.js.map"
+    "main.75c42ae3.css.map": "/bootcamp_frontend-development/static/css/main.75c42ae3.css.map",
+    "main.6570621a.js.map": "/bootcamp_frontend-development/static/js/main.6570621a.js.map",
+    "787.019eed97.chunk.js.map": "/bootcamp_frontend-development/static/js/787.019eed97.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a7081871.css",
-    "static/js/main.70d5296d.js"
+    "static/css/main.75c42ae3.css",
+    "static/js/main.6570621a.js"
   ]
 }
