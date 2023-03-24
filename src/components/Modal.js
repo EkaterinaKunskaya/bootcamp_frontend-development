@@ -6,7 +6,7 @@ export const Modal = props => {
     if (card) {
         return (
             <div className={`modal__wrapper ${isOpened ? 'open' : 'close'}`} onClick={onModalClose}>
-                <div className="modal__content"
+                <div className='modal__content'
                     style={{ background: `linear-gradient(270deg, rgb(255, 255, 255) 65%, rgb(0, 0, 0, 0) 100%), url(${card.image})` }}
                 >
                     <div className='modal__info' key={card.id}>

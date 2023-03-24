@@ -5,8 +5,8 @@ import { Preloader } from './Preloader';
 import Card from './Card';
 import { Modal } from './Modal';
 
-import { buttonScrollCreator } from "../utils/buttonScrollCreator";
-import { createPages } from "../utils/pagesCreator";
+import { buttonScrollCreator } from '../utils/buttonScrollCreator';
+import { createPages } from '../utils/pagesCreator';
 
 import '../styles/components/General.scss';
 
@@ -65,18 +65,6 @@ const General = () => {
     }
   }
 
-  let code = cards.map((info) => {
-    return (
-      <div
-        key={info.id}
-        onClick={() => setModal({ ...modal, mode: true, id: info.id })}
-        className='general__item'
-      >
-        <Card info={info} />
-      </div>
-    )
-  });
-
   const changePagination = () => {
     setCards([]);
     setFetching(true);
@@ -106,14 +94,26 @@ const General = () => {
     }
   }
 
+  let code = cards.map((info) => {
+    return (
+      <div
+        key={info.id}
+        onClick={() => setModal({ ...modal, mode: true, id: info.id })}
+        className='general__item'
+      >
+        <Card info={info} />
+      </div>
+    )
+  });
+
   return (
     <main className='general wrapper'>
       <button className='general__button-change' onClick={changePagination}>change pagination</button>
-      <a href="#top" className='general__button-to-top' id='btn-top'>Top</a>
+      <a href='#top' className='general__button-to-top' id='btn-top'>Top</a>
       {
         (pagination === 2) ?
           <div className='general__pagination'>
-            <a className='page' id='left' onClick={changePage} href=".#">«</a>
+            <a className='page' id='left' onClick={changePage} href='.#'>«</a>
             {
               pages.map((page, index) => {
                 return (
@@ -131,7 +131,7 @@ const General = () => {
                 )
               })
             }
-            <a className='page' id='right' onClick={changePage} href=".#">»</a>
+            <a className='page' id='right' onClick={changePage} href='.#'>»</a>
           </div>
           : null
       }
