@@ -1,4 +1,4 @@
-import '../styles/Modal.scss';
+import '../styles/components/Modal.scss';
 
 export const Modal = props => {
     const { isOpened, onModalClose, card } = props;

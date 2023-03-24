@@ -1,0 +1,29 @@
+@import '../variables';
+
+.card__img {
+    max-width: 80%;
+    border-radius: $radius;
+    box-shadow: 5px 10px 15px $box-shadow;
+    transition: margin-top 10s;
+
+    &:hover {
+        transform: translate(0, -60px);
+        transition: .8s;
+
+        @media (max-width: $mobile) {
+            transform: translate(0, 0);
+            transition: 0;
+        }
+    }
+}
+
+.card__text {
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-align: center;
+
+    @media (max-width: $small-screens) {
+        font-size: 1.1rem;
+    }
+}
