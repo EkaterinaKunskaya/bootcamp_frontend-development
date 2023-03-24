@@ -1,0 +1,46 @@
+.modal__wrapper {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(10px);
+    z-index: 2;
+    padding: 10%;
+
+    &.open {
+        height: 100%;
+        display: block;
+    }
+
+    .modal__content {
+        max-width: 700px;
+        height: 300px;
+        margin: auto;
+        background-repeat: no-repeat;
+        margin-top: 7%;
+        padding: 30px;
+        border-radius: 10px;
+
+        .modal__info {
+            margin-left: 55%;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 5% 3%;
+
+            @media (max-width: 720px) {
+                margin-left: 40%;
+            }
+
+            @media (max-width: 560px) {
+                margin-left: 10%;
+                margin-top: 10%;
+            }
+
+            .modal__info-text {
+                display: block;
+            }
+        }
+    }
+}
